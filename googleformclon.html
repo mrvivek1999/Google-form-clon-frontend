@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .openletter{
+            border: solid black 0.5px; 
+            padding: 10px;
+            border-radius: 10px; 
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 100px;   
+            background-color: white; 
+        }
+        .box{
+            border: solid black 0.5px; 
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 20px; 
+            background-color: white;
+        }
+        
+        #heading{
+            font-size: 30;
+        }
+        .required{
+            color: red;
+        }
+        .box input{
+       border: none;
+        border-bottom: solid black 1px;
+        width: 350px;
+        outline: none;
+    }
+    .subheading{
+        font-size: large;
+    }
+    #chackbox{
+        margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 20px;
+    }
+    #submit{
+        margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 20px;  
+    }
+    #button{
+        background-color: purple;
+        border: none;
+        font-size: 18px;
+        padding: 10px;
+        color: aliceblue;
+        border-radius: 5px;
+    }
+    #body{
+        background-color: aliceblue;
+    }
+   
+    </style>
+</head>
+<body id="body">
+    <form action="https://script.google.com/macros/s/AKfycbysruNMrMwrFaZDXZx-umwQFBvjBpxjPeFTL5RZx89480mNozS4-iHHcq9wp4w9bb0E9A/exec" method="post" class="">
+    <div class="openletter">
+        
+           <p id="heading">Open Letter Maker</p>
+           <p>All of the submission to this form will be appended into a table as signatures in the style of an open letter. </p> 
+           <p class="required">*Required</p>
+    </div>
+    
+    <div width="50%" class="box">
+        
+        <p class="subheading">Full Name<b class="required">*</b></p>
+        <p>Any text provided here will be used to create a digital signature.</p> 
+        <input  class="inputbox" required  name="name" placeholder="Your answer" type="text">
+ </div>
+
+ <div width="50%" class="box">
+        
+    <p class="subheading">Email<b class="required">*</b></p>
+    <p>Enter your Email Address like "abcd134@gmail/hotmail.com"</p> 
+    <input  class="inputbox" required pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9 -]+\.[a-z]{2,}"  name="email" placeholder="Your answer" type="text">
+</div>
+
+<div width="50%" class="box">
+        
+    <p class="subheading">Mobile Number<b class="required">*</b></p>
+    <p>Enter your 10 Digit Mobile Number </p> 
+    <input pattern="[0-9]+" class="inputbox" required type="phone" name="number" placeholder="Your answer" maxlength="10">
+</div>
+
+<div width="50%" class="box">
+        
+    <p class="subheading">Upload Resume</p>
+    <p>Upload Reaume in .pdf /.doc   </p> 
+    <input type="file"  name="pdf">
+</div>
+
+<div width="50%" id="chackbox">
+    <input type="checkbox" required name="chackbox" id="">    
+    I will present the supporting documents as and when required.
+</div>
+<div id="submit">
+    <input id="button" type="submit" value="Submit"  >
+</div>
+</form>
+</body>
+</html>
